@@ -36,3 +36,9 @@ python reconciler.py examples/01-matching-booking.json --json-out reports/01-mat
 Inputs use an explicit normalized schema; this sample contains no production provider adapter. Real use requires verified provider mappings, complete correctly scoped before/after backend records, and human-reviewed caller intent. Completeness, provenance and review annotations are input assertions, not independently verified by this program. The synthetic examples deliberately supply or omit those assertions.
 
 These results illustrate evidence checks. They do not establish voice quality, live workflow performance, recovered bookings, customer results or production reliability. Reports omit raw traces and destination rows; real input files still require appropriate handling.
+
+## Paid help with a booking payload
+
+Have an existing voice booking tool that sends the wrong appointment time or maps a field incorrectly? APX is taking inquiries for a small paid correction to one reproducible payload-mapping defect. Scope and quote depend on the affected source, a synthetic reproduction and an agreed acceptance check. This sample demonstrates offline checks only; no live vendor integration or customer results are demonstrated.
+
+[Open an issue](https://github.com/jonahgropps-hash/apx-voice-booking-check/issues/new) with a made-up example of the expected and actual payload, the affected mapping excerpt and your budget. Never post credentials, recordings, customer data or personal information.

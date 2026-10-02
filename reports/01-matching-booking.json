@@ -1,0 +1,12 @@
+{
+  "report_version": "1.0",
+  "case_id": "synthetic_01_matching_booking",
+  "verdict": "PASS",
+  "findings": [],
+  "metrics": {
+    "booking_attempts": 1,
+    "new_active_target_records": 1,
+    "exact_eligible_records": 1
+  },
+  "evidence_kind": "normalized bundle; adapter and voice performance unverified"
+}

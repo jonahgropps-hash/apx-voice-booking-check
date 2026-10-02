@@ -1,0 +1,17 @@
+{
+  "report_version": "1.0",
+  "case_id": "synthetic_04_incomplete_evidence",
+  "verdict": "UNKNOWN",
+  "findings": [
+    {
+      "code": "INCOMPLETE_BACKEND_SNAPSHOT",
+      "severity": "UNKNOWN"
+    }
+  ],
+  "metrics": {
+    "booking_attempts": 1,
+    "new_active_target_records": null,
+    "exact_eligible_records": null
+  },
+  "evidence_kind": "normalized bundle; adapter and voice performance unverified"
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "contract": {
+    "case_id": "synthetic_01_matching_booking",
+    "operation": "book",
+    "allow_existing": false,
+    "expected": {
+      "locationId": "loc_synthetic",
+      "calendarId": "cal_synthetic",
+      "contactId": "contact_synthetic",
+      "startTime": "2026-10-03T09:00:00-04:00",
+      "endTime": "2026-10-03T10:00:00-04:00"
+    }
+  },
+  "call": {
+    "call_id": "call_synthetic",
+    "call_status": "ended",
+    "start_timestamp": 1790877600000,
+    "end_timestamp": 1790877780000,
+    "observation": {
+      "reviewed": true,
+      "claimed_booking": true
+    },
+    "transcript_with_tool_calls": [
+      {
+        "role": "tool_call_invocation",
+        "tool_call_id": "tool_1",
+        "name": "book_appointment",
+        "arguments": "{\"locationId\": \"loc_synthetic\", \"calendarId\": \"cal_synthetic\", \"contactId\": \"contact_synthetic\", \"startTime\": \"2026-10-03T09:00:00-04:00\", \"endTime\": \"2026-10-03T10:00:00-04:00\"}"
+      },
+      {
+        "role": "tool_call_result",
+        "tool_call_id": "tool_1",
+        "content": "{\"success\": true, \"appointmentId\": \"apt_synthetic_1\"}"
+      }
+    ]
+  },
+  "before_snapshot": {
+    "captured_at": "2026-10-01T13:59:00-04:00",
+    "scope": {
+      "locationId": "loc_synthetic",
+      "calendarId": "cal_synthetic"
+    },
+    "complete": true,
+    "appointments": []
+  },
+  "after_snapshot": {
+    "captured_at": "2026-10-01T14:03:05-04:00",
+    "scope": {
+      "locationId": "loc_synthetic",
+      "calendarId": "cal_synthetic"
+    },
+    "complete": true,
+    "appointments": [
+      {
+        "locationId": "loc_synthetic",
+        "calendarId": "cal_synthetic",
+        "contactId": "contact_synthetic",
+        "startTime": "2026-10-03T09:00:00-04:00",
+        "endTime": "2026-10-03T10:00:00-04:00",
+        "id": "apt_synthetic_1",
+        "status": "confirmed"
+      }
+    ]
+  }
+}

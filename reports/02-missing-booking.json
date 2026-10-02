@@ -1,0 +1,21 @@
+{
+  "report_version": "1.0",
+  "case_id": "synthetic_02_missing_booking",
+  "verdict": "FAIL",
+  "findings": [
+    {
+      "code": "CLAIM_WITHOUT_DURABLE_BOOKING",
+      "severity": "FAIL"
+    },
+    {
+      "code": "TOOL_RESULT_RECORD_NOT_FOUND",
+      "severity": "FAIL"
+    }
+  ],
+  "metrics": {
+    "booking_attempts": 1,
+    "new_active_target_records": 0,
+    "exact_eligible_records": 0
+  },
+  "evidence_kind": "normalized bundle; adapter and voice performance unverified"
+}

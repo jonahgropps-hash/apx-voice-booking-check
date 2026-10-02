@@ -1,0 +1,21 @@
+{
+  "report_version": "1.0",
+  "case_id": "synthetic_03_wrong_time",
+  "verdict": "FAIL",
+  "findings": [
+    {
+      "code": "BOOKING_TIME_MISMATCH",
+      "severity": "FAIL"
+    },
+    {
+      "code": "CLAIM_WITHOUT_DURABLE_BOOKING",
+      "severity": "FAIL"
+    }
+  ],
+  "metrics": {
+    "booking_attempts": 1,
+    "new_active_target_records": 1,
+    "exact_eligible_records": 0
+  },
+  "evidence_kind": "normalized bundle; adapter and voice performance unverified"
+}
